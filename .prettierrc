@@ -1,0 +1,11 @@
+{
+	"bracketSpacing": true,
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }],
+	"printWidth": 100,
+	"semi": true,
+	"tabWidth": 2,
+	"quoteProps": "consistent"
+}

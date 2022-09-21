@@ -1,0 +1,40 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": ".",
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"paths": {
+			"$atoms": ["src/lib/components/atoms"],
+			"$atoms/*": ["src/lib/components/atoms/*"],
+			"$components": ["src/lib/components"],
+			"$components/*": ["src/lib/components/*"],
+			"$functions": ["src/lib/functions"],
+			"$functions/*": ["src/lib/functions/*"],
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"$molecules": ["src/lib/components/molecules"],
+			"$molecules/*": ["src/lib/components/molecules/*"],
+			"$organisms": ["src/lib/components/organisms"],
+			"$organisms/*": ["src/lib/components/organisms/*"],
+			"$settings": ["src/lib/settings"],
+			"$settings/*": ["src/lib/settings/*"],
+			"$stores": ["src/lib/stores"],
+			"$stores/*": ["src/lib/stores/*"],
+			"$types": ["src/lib/types"],
+			"$types/*": ["src/lib/types/*"],
+			"$utils": ["src/lib/utils"],
+			"$utils/*": ["src/lib/utils/*"]
+		},
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true
+	}
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+	//
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+}
