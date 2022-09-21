@@ -12,6 +12,7 @@ bun.lockb
 yarn.lock
 package-lock.json
 .code-workspace
+pnpm-lock.yaml
 
 # mac
 ._*
