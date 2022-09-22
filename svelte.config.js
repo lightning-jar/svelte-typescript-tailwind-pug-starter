@@ -20,7 +20,7 @@ const config = {
 			$functions: path.resolve('./src/lib/functions'),
 			$lib: path.resolve('./src/lib'),
 			$molecules: path.resolve('./src/lib/components/molecules'),
-			$organs: path.resolve('./src/lib/components/organisms'),
+			$organism: path.resolve('./src/lib/components/organisms'),
 			$settings: path.resolve('./src/lib/settings'),
 			$stores: path.resolve('./src/lib/stores'),
 			$types: path.resolve('./src/lib/types'),
