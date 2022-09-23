@@ -1,17 +1,22 @@
-.DS_Store
-node_modules
-/build
+# build folder
+dist/
 build/
-generated/
-/.svelte-kit
-/package
-.env
-.env.*
-!.env.example
+
+# logs
+logs/
+.cache
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Dependency folder
+node_modules/
+
+# lock files
 bun.lockb
 yarn.lock
 package-lock.json
-.code-workspace
 pnpm-lock.yaml
 
 # mac
@@ -20,7 +25,15 @@ pnpm-lock.yaml
 
 # env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+
+# Sveltekit files
+.svelte-kit
+# generated/
+# output/
+# /.svelte-kit/types
+
+# Editor files
+.vscode
+.code-workspace
