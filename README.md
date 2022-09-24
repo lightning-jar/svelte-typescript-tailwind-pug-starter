@@ -4,7 +4,7 @@ A starter for launching a Sveltekit / Pug project with Typescript and Tailwind a
 
 ## About
 
-This starter was developed for the [Lightning Jar ](URL 'https://lightningjar.com')Lightning Jar team. It's designed to get one up and running quickly on a new project using:
+This starter was developed for the [Lightning Jar](URL 'https://lightningjar.com') team. It's designed to get one up and running quickly on a new project using:
 
 - Sveltekit
 - Svelte
