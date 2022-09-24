@@ -6,15 +6,15 @@ A starter for launching a Sveltekit / Pug project with Typescript and Tailwind a
 
 This starter was developed for the [Lightning Jar ](URL 'https://lightningjar.com')Lightning Jar team. It's designed to get one up and running quickly on a new project using:
 
-- Sveltekit (@sveltejs/kit ^1.0.0-next.491) -- application framework
-- Svelte (^v3.50.1) - JS framework
-- Typescript (^v4.8.3) - JS with syntax for types
-- Pug.js (^3.02 ) --template engine / html preprocessor)
-- TailwindCSS(^3.1.3) -- css framework
-- Prettier -- opinionated code formatter
-- ESLint -- Linter
-- Vite -- Front End Tooling
-- Playwright -- Testing
+- Sveltekit
+- Svelte
+- Typescript
+- Pug
+- TailwindCSS
+- Prettier
+- ESLint
+- Vite
+- Playwright
 
 This starter follows many of the defaults of Sveltekit.
 
@@ -68,11 +68,3 @@ If you are using VSCode, we recommend these extensions:
 - [Tailwind CSS Intellisense](URL 'https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss')
 - [Playwright Test for VSCode](URL 'https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright')
 
-## Other Extension Recommendations
-
-These are optional, but we tend to use them internally for better collaboration:
-
-- [Code Spell Checker](URL 'https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments')
-- [Better Comments](URL 'https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments')
-- [ToDo Tree](URL 'https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree')
-- [markdownlint](URL 'https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint')
