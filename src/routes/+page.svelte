@@ -65,11 +65,11 @@
 							LogoBlock(
 							name!="{logo.name}"
 							)
-						//- Logo Caption
-						figcaption.hidden.text-center.text-sm.border-t.border-white.pt-4.border-opacity-40.mt-2.font-light(
-							class="lg:text-base xl:text-lg tracking-wider group-hover:text-accent transition-colors sm:block"
-							)
-							| {logo.name}
+							//- Logo Caption
+							figcaption.hidden.text-center.text-sm.border-t.border-white.pt-4.border-opacity-40.mt-2.font-light(
+								class="lg:text-base xl:text-lg tracking-wider group-hover:text-accent transition-colors sm:block"
+								)
+								| {logo.name}
 					+elseif('logo.name == "spacer"')
 						.hidden.h-full(class="sm:flex items-center justify-center")
 							PlusSpacer
