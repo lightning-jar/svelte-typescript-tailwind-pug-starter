@@ -74,7 +74,7 @@
 						.hidden.h-full(class="sm:flex items-center justify-center")
 							PlusSpacer
 
-		h1.mb-3.text-blue-500.text-xl.font-semibold(class="text-accent")
+		h1.mb-3.text-xl.font-semibold(class="text-accent")
 			| A Starter Template for the Svelte Preprocessed Stack.
 
 		p.text-lg.mb-8.opacity-90
