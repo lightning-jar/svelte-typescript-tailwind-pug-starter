@@ -79,11 +79,14 @@
 
 		p.text-lg.mb-8.opacity-90
 			| An open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly, without all the headaches.
-
-		a.inline-block.px-4.py-2.text-light(
-			class="bg-transparent outline outline-white outline-1 rounded hover:bg-accent hover:outline-transparent hover:text-primary transition-all",
-			href="https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter" title="View project on Github"
-			) Clone from Github
+		.mb-8
+			a.inline-block.px-4.py-2.text-light(
+				class="bg-transparent outline outline-white outline-1 rounded hover:bg-accent hover:outline-transparent hover:text-primary transition-all",
+				href="https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter" title="View project on Github"
+				) Clone from Github
+		div.text-sm
+			span Also check out the
+			a.inline-block.ml-1.underline.underline-offset-4(href="https://pugify.dev" title="convert HTML to pug") HTML to Pug converter
 
 //- footer
 .absolute.bottom-0.left-0.text-white.text-sm.pb-6.pl-4.opacity-80(class="sm:pl-8")
