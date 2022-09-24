@@ -11,7 +11,7 @@
 
 <template lang="pug">
 .flex.justify-center.items-center.outline.outline-white.outline-0.rounded(
-	class="group-hover:text-accent transition-colors h-full pointer-events-none"
+	class="group-hover:text-blue-300 full pointer-events-none"
 )
 	+if('name.toLowerCase() == "svelte"')
 		LogoSvelte
