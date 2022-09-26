@@ -54,17 +54,21 @@
 					title="View project on Github"
 					) Clone from Github
 
-//- Footer
+//- Prefooter
 .bottom-0.left-0.text-white.text-sm.pb-6.px-4.w-full.bg-primary(class="sm:absolute sm:px-8")
 
 	//- Cink to Pugify HTML to Pug Converter
-	.text-sm.text-center.px-4.py-4.rounded-md.mb-8(class="bg-white/5")
-		a.inline-block.underline.underline-offset-4.opacity-90.transtion-colors(
-			class="hover:text-accent hover:opacity-90",
+	.text-sm.text-center.px-4.py-4.rounded-md.mb-0(class="bg-white/5")
+		a.italic.inline-block.text-white.underline-offset-4.opacity-90.transtion-colors(
+			class="hover:text-accent hover:underline hover:opacity-90",
 			href="https://pugify.dev"
 			title="convert HTML to pug"
-			) Also check out the Pugify | HTML to Pug converter
+			)
+			span Also check out my ad-free, tracker-free HTML to Pug converter @
+			a.inline-block.ml-1(src="https://pugify.dev") https://pugify.dev
 
+//- Footer
+footer
 	//- Attribution
 	.opacity-70.text-sm.text-center
 		.inline-block Created by Kevin Peckham for
