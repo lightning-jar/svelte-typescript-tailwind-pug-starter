@@ -1,50 +1,18 @@
 <!-- Example Svelte Page / Starter Web Page-->
 <script lang="ts">
 	// Components
-	import LogoBlock from '$molecules/LogoBlock.svelte';
-	import PlusSpacer from '$atoms/PlusSpacer.svelte';
+	import LogoBlock from '$atoms/LogoBlock.svelte';
 
 	// Date utility
 	const today = new Date();
 	const date = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
 
-	// Logos
-	interface LogoData {
-		[key: string]: string | undefined;
-		title?: string;
-		href?: string;
-		name: string;
-	}
-	const logos: LogoData[] = [
-		{
-			title: 'Learn about Svelte',
-			href: 'https://svelte.dev/',
-			name: 'Svelte'
-		},
-		{
-			name: 'spacer'
-		},
-		{
-			title: 'Learn about Typescript',
-			href: 'https://www.typescriptlang.org/',
-			name: 'Typescript'
-		},
-		{
-			name: 'spacer'
-		},
-		{
-			title: 'Learn about TailwindCSS',
-			href: 'https://tailwindcss.com/',
-			name: 'TailwindCSS'
-		},
-		{
-			name: 'spacer'
-		},
-		{
-			title: 'Learn about Pug',
-			href: 'https://pugjs.org/api/getting-started.html',
-			name: 'Pug'
-		}
+	// Data
+	const logos: string[][] = [
+		['Svelte', 'https://svelte.dev/'],
+		['Typescript', 'https://www.typescriptlang.org/'],
+		['TailwindCSS', 'https://tailwindcss.com/'],
+		['Pug', 'https://pugjs.org/api/getting-started.html']
 	];
 </script>
 
@@ -55,16 +23,19 @@
 
 		//- logo grid
 		.mt-6.mb-8.grid.grid-cols-2.gap-8.mx-auto(class="max-w-[12rem] sm:m-0 sm:grid-cols-7 sm:gap-0 sm:max-w-none sm:mb-12")
-			+each('logos as logo')
-				+const('name = logo.name')
-				+if('name != "spacer"')
-					+const('href = logo.href')
-					+const('title = logo.title')
-					a.flex.flex-col.h-full.justify-between.group("{href}" "{title}")
+			+each('logos as logo, index')
+				+const('name = (logo[0]) ? logo[0] : ""')
+				+if('name')
+					+const('href = logo[1]')
+					+const('title = "Learn more about " + logo[0]')
+					a("{href}" "{title}")
 						LogoBlock("{name}")
-					+elseif('name == "spacer"')
+
+					// only show plus spacer if not the last logo
+					+if('index != logos.length - 1')
 						.hidden.place-content-center(class="sm:grid")
-							PlusSpacer
+							.flex.place-content-center
+								span +
 
 		.text-center(class="sm:text-left")
 			//- Headline
