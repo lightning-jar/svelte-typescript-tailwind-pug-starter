@@ -3,27 +3,19 @@
 	Renders an svg logo with styling.
 -->
 <script lang="ts">
-	//components
-	import LogoSvelte from '$atoms/LogoSvelte.svelte';
-	import LogoTypescript from '$atoms/LogoTypescript.svelte';
-	import LogoTailwindCSS from '$atoms/LogoTailwindCSS.svelte';
-	import LogoPug from '$atoms/LogoPug.svelte';
-
 	//props
 	export let name: string = '';
 </script>
 
 <template lang="pug">
-.flex.justify-center.items-center.outline.outline-white.outline-0.rounded(
-	class="group-hover:text-blue-300 full pointer-events-none"
-)
-	+if('name.toLowerCase() == "svelte"')
-		LogoSvelte
-	+if('name.toLowerCase()  == "typescript"')
-		LogoTypescript
-	+if('name.toLowerCase()  == "tailwindcss"')
-		LogoTailwindCSS
-	+if('name.toLowerCase()  == "pug"')
-		LogoPug
+figure.text-center.text-sm
+	img.block.w-full.h-auto(
+		alt!="{name + 'logo'}"
+		height="160" width="160"
+		src!="{'/images/' + name.toLowerCase() + '.svg'}")
+	figcaption.hidden.border-t.border-white.pt-4.border-opacity-40.mt-1.font-light(
+		class="sm:block lg:text-base xl:text-lg tracking-wider group-hover:text-blue-300 transition-colors"
+		)
+		| {name}
 
 </template>
