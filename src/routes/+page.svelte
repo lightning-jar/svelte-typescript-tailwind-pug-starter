@@ -40,7 +40,7 @@
 		.text-center(class="sm:text-left")
 			//- Headline
 			h1.mb-3.text-xl.font-semibold.text-accent
-				| A Starter Template for the Svelte Preprocessed Stack.
+				| Svelte Typescript TailwindCSS & Pug Starter.
 
 			//- Body Copy
 			p.mb-10.text-lg.opacity-90(class="sm:mb-8")
@@ -68,12 +68,12 @@
 			a.inline-block.ml-1(src="https://pugify.dev") https://pugify.dev
 
 //- Footer
-footer
+footer.bg-primary.text-white.text-xs.pb-24.px-4
 	//- Attribution
-	.opacity-70.text-sm.text-center
-		.inline-block Created by Kevin Peckham for
-		a.inline-block.ml-1.underline.underline-offset-4.transition-colors(
-			href="https://lightningjar.com"
-			class="hover:text-accent") Lightning Jar.
-		span(class="sm:inline-block sm:ml-2") Last updated: {date}
+	.opacity-70.text-center
+		.mb-1.inline-block Created by Kevin Peckham for
+			a.inline-block.ml-1.underline-offset-4.transition-colors(
+				href="https://lightningjar.com"
+				class="hover:text-accent") Lightning Jar.
+		div(class="sm:inline-block sm:ml-2") Last updated: {date}
 </template>
