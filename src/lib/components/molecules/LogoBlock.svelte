@@ -1,3 +1,7 @@
+<!--
+	@component
+	Renders an svg logo with styling.
+-->
 <script lang="ts">
 	//components
 	import LogoSvelte from '$atoms/LogoSvelte.svelte';
