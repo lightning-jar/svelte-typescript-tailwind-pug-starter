@@ -21,21 +21,16 @@
 .flex.justify-center.min-h-screen.items-center.text-white.p-4.relative(class="bg-[#142239] pb-48")
 	div(class="sm:max-w-lg lg:max-w-xl xl:max-w-2xl")
 
-		//- logo grid
+		//- Logo grid
 		.mt-6.mb-8.grid.grid-cols-2.gap-8.mx-auto(class="max-w-[12rem] sm:m-0 sm:grid-cols-7 sm:gap-0 sm:max-w-none sm:mb-12")
 			+each('logos as logo, index')
 				+const('name = (logo[0]) ? logo[0] : ""')
-				+if('name')
-					+const('href = logo[1]')
-					+const('title = "Learn more about " + logo[0]')
-					a("{href}" "{title}")
-						LogoBlock("{name}")
-
-					// only show plus spacer if not the last logo
-					+if('index != logos.length - 1')
-						.hidden.place-content-center(class="sm:grid")
-							.flex.place-content-center
-								span +
+				+const('href = logo[1]')
+				+const('isLast = (index == (logos.length - 1))')
+				LogoBlock(
+					"{name}"
+					"{href}"
+					"{isLast}")
 
 		.text-center(class="sm:text-left")
 			//- Headline
@@ -64,8 +59,7 @@
 			href="https://pugify.dev"
 			title="convert HTML to pug"
 			)
-			span Also check out my ad-free, tracker-free HTML to Pug converter @
-			a.inline-block.ml-1(src="https://pugify.dev") https://pugify.dev
+			span Also check out my ad-free, tracker-free HTML to Pug converter @ https://pugify.dev
 
 //- Footer
 footer.bg-primary.text-white.text-xs.pb-24.px-4
