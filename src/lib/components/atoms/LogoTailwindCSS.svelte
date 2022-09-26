@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <template lang="pug">
 svg(
 	xmlns:v="https://vecta.io/nano"
