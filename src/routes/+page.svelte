@@ -49,7 +49,7 @@
 			class="group-hover:text-accent hover:opacity-100",
 			href="https://pugify.dev"
 			title="convert HTML to pug"
-			) Also check out my ad-free HTML to Pug converter @ https://pugify.dev
+			) Also check out the ad-free HTML to Pug converter @ https://pugify.dev
 
 //- Footer
 footer.bg-primary.text-white.text-xs.pb-24.px-4
