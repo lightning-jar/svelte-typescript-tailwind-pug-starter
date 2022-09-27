@@ -26,11 +26,11 @@
 		.text-center(class="sm:text-left")
 			//- Headline
 			h1.mb-3.font-semibold.text-accent(class="prose-xl")
-				| Get started with Svelte, Typescript, TailwindCSS & Pug.
+				| Hit the ground running with Sveltekit, Typescript, TailwindCSS & Pug.
 
 			//- Body Copy
 			p.mb-10.text-md.opacity-90(class="prose-base sm:mb-8")
-				| An open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly, without all the headaches.
+				| This project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly with the Svelte Preprocessed Stack.
 
 			//- Call-to-action
 			.mb-16.w-full(class="sm:mb-24")
