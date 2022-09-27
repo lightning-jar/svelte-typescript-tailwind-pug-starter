@@ -4,6 +4,7 @@ A starter template for "Svelte Preprocessed Stack" projects. Helps you quickly l
 &nbsp;
 
 ## Contents
+
 [About this Template](#about)<br />
 [Core Technologies](#core-technologies)<br />
 [Plugins, Adapters, Misc](#plugins-adapters--misc)<br />
@@ -27,11 +28,15 @@ This starter was developed for the [Lightning Jar ](https://lightningjar.com) te
 [TailwindCSS](https://tailwindcss.com/) - CSS Framework<br />
 [Autoprefixer](https://github.com/postcss/autoprefixer) - CSS Vendor Prefixing<br />
 [PostCSS](https://postcss.org/) - CSS Transformations<br />
+
+### Formatting, Linting, & Testing
+
 [Prettier](https://prettier.io/) - Formatting<br />
 [ESLint](https://eslint.org/) - Linting<br />
 [Playwright](https://playwright.dev/) - Testing<br />
 
 ### Plugins, Adapters & Misc
+
 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)<br/>
 [eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3)<br/>
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)<br/>
@@ -44,9 +49,7 @@ This starter was developed for the [Lightning Jar ](https://lightningjar.com) te
 [typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)<br/>
 [typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)<br/>
 
-
 &nbsp;
-
 
 ## Getting Started
 
