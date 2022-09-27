@@ -1,9 +1,19 @@
 # Sveltekit Typescript Tailwind Pug Starter Template
 
-A starter template for launching a Sveltekit / Pug project with Typescript and TailwindCSS.
+A starter template for launching Sveltekit / Pug projects with Typescript and TailwindCSS.
 &nbsp;
 
-## 1. About this Template
+## Contents
+[About this Template](#about)<br />
+[Core Technologies](#core-technologies)<br />
+[Plugins, Adapters, Misc](#plugins-adapters--misc)<br />
+[Getting Started](#getting-started)<br />
+[About Sveltekit](#about-sveltekit)<br />
+[Using Pug with Svelte](#using-pug-with-svelte)<br />
+[Folder Shortcuts](#folder-shortcuts)<br />
+[Editor & Extenstions](#editor--extensions)<br />
+
+## About
 
 This starter was developed for the [Lightning Jar ](https://lightningjar.com) team. It's designed to get one up and running quickly on a new project using the core technologies Svelte, Sveltekit, Typescript, TailwindCSS, Pug + a few other bells and whistles ( see the full breakdown below).
 
@@ -38,7 +48,7 @@ This starter was developed for the [Lightning Jar ](https://lightningjar.com) te
 &nbsp;
 
 
-## 2. Getting Started
+## Getting Started
 
 ### Developing
 
@@ -65,7 +75,7 @@ You can preview the production build with `npm run preview`.
 
 &nbsp;
 
-## 3. About SvelteKit
+## About SvelteKit
 
 Sveltekit is still in the final stages of beta. Specifically, it is in release candidate phase for 1.0 while the SvelteKit team addresses reported issues and add polish.
 
@@ -82,7 +92,7 @@ If you get stuck working with SvelteKit yuo can reach out for help in the [Svelt
 
 &nbsp;
 
-## 4. Using Pug with Svelte via Svelte-Preprocess
+## Using Pug with Svelte
 
 I love Pug, and the first thing I figured out when I started working with Svelte, was how to use Pug inside Svelte files. Thankfully other devs had already solved the technical challenges for me.
 
@@ -155,7 +165,7 @@ input(on:input="{bar}")
 
 &nbsp;
 
-## 5. Folder Shortcuts
+## Folder Shortcuts
 
 The following shortcuts and corresponding folders come pre-configured in this template:
 
@@ -172,7 +182,7 @@ The following shortcuts and corresponding folders come pre-configured in this te
 
 &nbsp;
 
-## 6. Recommended Editor & Extensions
+## Editor & Extensions
 
 If you are using VSCode, we recommend these extensions:
 
