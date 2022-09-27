@@ -11,22 +11,27 @@
 	export let name: string = '';
 	export let href: string = '';
 	export let hidePlus: boolean = false;
+	export let src: string = '';
 
 	// reactive declarations
 	$: title = `Learn more about ${name}`;
 </script>
 
 <template lang="pug">
-a("{href}" "{title}")
-	figure.text-center.text-sm
-		img.block.w-full.h-auto(
+a.rounded-lg.transition-all(
+	class="group hover:bg-white/5"
+	"{href}"
+	"{title}")
+
+	figure.text-center.text-sm.relative
+		img.block.h-auto(
 			alt!="{name + ' logo'}"
 			height="160"
-			src!="{'/images/' + name.toLowerCase() + '.svg'}"
+			src!="{src}"
 			width="160"
 			)
-		figcaption.hidden.border-t.border-white.pt-4.border-opacity-40.mt-1.font-light.transition-colors.tracking-wider(
-			class="sm:block lg:text-base xl:text-lg group-hover:text-blue-300")
+		figcaption.pointer-events-none.absolute.top-0.left-0.w-full.opacity-0.transition-opacity.text-center.font-light.tracking-wider(
+			class="group-hover:sm:opacity-100 -translate-y-7")
 			| {name}
 
 +if('!hidePlus')
