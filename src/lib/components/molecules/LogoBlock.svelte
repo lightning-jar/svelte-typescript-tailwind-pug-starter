@@ -4,11 +4,15 @@
 	- takes a name prop to determine the image and caption text
 -->
 <script lang="ts">
-	//props
+	// components
+	import PlusBlock from '$atoms/PlusBlock.svelte';
+
+	// props
 	export let name: string = '';
 	export let href: string = '';
-	export let isLast: boolean = false;
+	export let hidePlus: boolean = false;
 
+	// reactive declarations
 	$: title = `Learn more about ${name}`;
 </script>
 
@@ -25,9 +29,7 @@ a("{href}" "{title}")
 			class="sm:block lg:text-base xl:text-lg group-hover:text-blue-300")
 			| {name}
 
-+if('!isLast')
-	.hidden.place-content-center(class="sm:grid")
-		.flex.place-content-center
-			span +
++if('!hidePlus')
+	PlusBlock
 
 </template>

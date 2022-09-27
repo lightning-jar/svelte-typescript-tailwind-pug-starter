@@ -1,19 +1,14 @@
 <!-- Example Svelte Page / Starter Web Page-->
 <script lang="ts">
 	// Components
-	import LogoBlock from '$atoms/LogoBlock.svelte';
+	import LogoBlock from '$components/molecules/LogoBlock.svelte';
 
-	// Date utility
+	// Store
+	import { brands } from '$lib/store/brandsStore';
+
+	// Date Utility
 	const today = new Date();
 	const date = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
-
-	// Data
-	const logos: string[][] = [
-		['Svelte', 'https://svelte.dev/'],
-		['Typescript', 'https://www.typescriptlang.org/'],
-		['TailwindCSS', 'https://tailwindcss.com/'],
-		['Pug', 'https://pugjs.org/api/getting-started.html']
-	];
 </script>
 
 <template lang="pug">
@@ -21,21 +16,21 @@
 .flex.justify-center.min-h-screen.items-center.text-white.p-4.relative(class="bg-[#142239] pb-48")
 	div(class="sm:max-w-lg lg:max-w-xl xl:max-w-2xl")
 
-		//- Logo grid
+		//- Brand Grid
 		.mt-6.mb-8.grid.grid-cols-2.gap-8.mx-auto(class="max-w-[12rem] sm:m-0 sm:grid-cols-7 sm:gap-0 sm:max-w-none sm:mb-12")
-			+each('logos as logo, index')
-				+const('name = (logo[0]) ? logo[0] : ""')
-				+const('href = logo[1]')
-				+const('isLast = (index == (logos.length - 1))')
+			+each('$brands as brand, index')
+				+const('name = brand.name')
+				+const('href = brand.url')
+				+const('hidePlus = $brands.length == index + 1')
 				LogoBlock(
 					"{name}"
 					"{href}"
-					"{isLast}")
+					"{hidePlus}")
 
 		.text-center(class="sm:text-left")
 			//- Headline
 			h1.mb-3.text-xl.font-semibold.text-accent
-				| Svelte Typescript TailwindCSS & Pug Starter.
+				| Get started with Svelte, Typescript, TailwindCSS & Pug.
 
 			//- Body Copy
 			p.mb-10.text-lg.opacity-90(class="sm:mb-8")
