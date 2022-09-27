@@ -1,6 +1,6 @@
 # Sveltekit Typescript Tailwind Pug Starter Template
 
-A starter template for launching Sveltekit / Pug projects with Typescript and TailwindCSS.
+A starter template for "Svelte Preprocessed Stack" projects. Helps you quickly launch a new project with Sveltekit, Typescript, TailwindCSS, and Pug.
 &nbsp;
 
 ## Contents
