@@ -30,7 +30,7 @@
 
 			//- Body Copy
 			p.mb-10.text-md.opacity-90(class="prose-base sm:mb-8")
-				| This project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly with the Svelte Preprocessed Stack.
+				| This project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly with the SkinnyPug Stack.
 
 			//- Call-to-action
 			.mb-16.w-full(class="sm:mb-24")
