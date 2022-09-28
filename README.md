@@ -16,7 +16,7 @@ A starter template for "Svelte Preprocessed Stack" projects. Helps you quickly l
 
 ## About
 
-This starter was developed for the [Lightning Jar ](https://lightningjar.com) team. It's designed to get one up and running quickly on a new project using the core technologies Svelte, Sveltekit, Typescript, TailwindCSS, Pug + a few other bells and whistles ( see the full breakdown below).
+This starter was developed for the [Lightning Jar \](https://lightningjar.com) team. It's designed to get one up and running quickly on a new project using the core technologies Svelte, Sveltekit, Typescript, TailwindCSS, Pug + a few other bells and whistles ( see the full breakdown below).
 
 ### Core Technologies
 
@@ -57,7 +57,7 @@ This starter was developed for the [Lightning Jar ](https://lightningjar.com) te
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
+```console
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -68,7 +68,7 @@ npm run dev -- --open
 
 To create a production version of your app:
 
-```bash
+```console
 npm run build
 ```
 
