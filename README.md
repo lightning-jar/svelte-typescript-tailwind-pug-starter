@@ -1,6 +1,6 @@
-# Svelte Typescript Tailwind Pug Starter Template
+# "Skinnypug | The Svelte Typescript Tailwind Pug Starter Template
 
-A starter template for "Svelte Preprocessed Stack" projects. Helps you quickly launch a new project with Svelte / Sveltekit, Typescript, TailwindCSS, and Pug.
+A starter template to help you quickly launch a new project with Svelte / Sveltekit, Typescript, TailwindCSS, and Pug. We call it the "Skinnypug" stack.
 &nbsp;
 
 ## Contents
