@@ -11,7 +11,6 @@ const config = {
 			postcss: true
 		})
 	],
-
 	kit: {
 		adapter: adapter(),
 		alias: {
