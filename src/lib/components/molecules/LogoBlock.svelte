@@ -1,7 +1,10 @@
 <!--
-	@component
-	A figure with svg image and caption.
-	- takes a name prop to determine the image and caption text
+@component
+A figure with svg image and caption.
+* prop name: string -- name of the logo
+* prop href: string -- link target url
+* prop hidePlus: boolean -- hide plus icon
+* prop src: string -- image source
 -->
 <script lang="ts">
 	// components
