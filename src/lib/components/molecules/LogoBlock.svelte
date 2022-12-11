@@ -11,10 +11,10 @@ A figure with svg image and caption.
 	import PlusBlock from '$atoms/PlusBlock.svelte';
 
 	// props
-	export let name: string = '';
-	export let href: string = '';
-	export let hidePlus: boolean = false;
-	export let src: string = '';
+	export let name = '';
+	export let href = '';
+	export let hidePlus = false;
+	export let src = '';
 
 	// reactive declarations
 	$: title = `Learn more about ${name}`;
