@@ -17,7 +17,6 @@ const config = {
 			$atoms: path.resolve('./src/lib/components/atoms'),
 			$components: path.resolve('./src/lib/components'),
 			$functions: path.resolve('./src/lib/functions'),
-			$lib: path.resolve('./src/lib'),
 			$molecules: path.resolve('./src/lib/components/molecules'),
 			$organism: path.resolve('./src/lib/components/organisms'),
 			$settings: path.resolve('./src/lib/settings'),
