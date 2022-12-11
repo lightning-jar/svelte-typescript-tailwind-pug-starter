@@ -1,9 +1,10 @@
 <!-- Example Svelte Page / Starter Web Page-->
 <script lang="ts">
-	// Components
+	// components
 	import LogoBlock from '$components/molecules/LogoBlock.svelte';
+	import ButtonLink from '$atoms/ButtonLink.svelte';
 
-	// Store
+	// store
 	import { brands } from '$stores/brandsStore';
 </script>
 
@@ -33,17 +34,16 @@
 				| This project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly with the SkinnyPug Stack.
 
 			//- Call-to-action
-			.mb-16.w-full(class="sm:mb-24")
-				a.inline-block.px-4.py-2.text-light.bg-transparent.outline.outline-white.outline-1.rounded.transition-all(
-					class="hover:bg-accent hover:outline-transparent hover:text-primary"
-					href="https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter"
-					title="View project on Github"
-					) Clone from Github
+			ButtonLink(
+				url="https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter"
+				title="View project on Github"
+				label="Clone from Github"
+				)
 
 //- Prefooter
 .bottom-0.left-0.text-white.text-sm.pb-6.px-4.w-full.bg-primary(class="sm:absolute sm:px-8")
 
-	//- Cross link
+	// Crosslink
 	.text-sm.text-center.px-4.py-4.rounded-md.mb-0.group(class="bg-white/5")
 		a.italic.inline-block.text-white.opacity-90.transition-all(
 			class="group-hover:text-accent hover:opacity-100",
