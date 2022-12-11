@@ -183,7 +183,7 @@ The following shortcuts and corresponding folders come pre-configured in this te
 - $types: './src/lib/types'
 - $utils: './src/lib/utils'
 
-&nbsp;
+&nbsp;&nbsp;
 
 ## Editor & Extensions
 
