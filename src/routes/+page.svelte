@@ -4,7 +4,7 @@
 	import LogoBlock from '$components/molecules/LogoBlock.svelte';
 
 	// Store
-	import { brands } from '$lib/store/brandsStore';
+	import { brands } from '$stores/brandsStore';
 </script>
 
 <template lang="pug">
