@@ -2,12 +2,11 @@
 @component
 An <a> styled to look like a button.
 * prop url: string  -- link target url
-* prop label: string -- link label
 * prop title: string -- link title
+* slot (default) -- link text
 -->
 <script lang="ts">
 	export let url = '#';
-	export let label = '';
 	export let title = '';
 </script>
 
@@ -17,5 +16,6 @@ An <a> styled to look like a button.
     class="hover:bg-accent hover:outline-transparent hover:text-primary"
     href="{url}"
     title="{title}"
-    ) {label}
+    )
+    slot
 </template>
