@@ -1,6 +1,6 @@
 <!--
 @component
-Here's some documentation for this component.
+Displays a grid of logos.
 -->
 <script lang="ts">
 	// components
