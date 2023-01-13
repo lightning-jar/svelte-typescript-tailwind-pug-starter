@@ -111,12 +111,15 @@ Because some of Svelte's template syntax is invalid in Pug `svelte-preprocess` p
 
 ```pug
 ul
-  +if('posts && posts.length > 1')
-    +each('posts as post')
-      li
-        a(rel="prefetch" href="blog/{post.slug}") {post.title}
-    +else()
-      span No posts :c
+	+if('posts && posts.length > 1')
+		+each('posts as post')
+			li
+				a(
+					href="blog/{post.slug}",
+					rel="prefetch"
+				) {  post.title  }
+		+else
+			span No posts :c
 ```
 
 &nbsp;
@@ -126,13 +129,13 @@ ul
 Pug encodes everything inside an element attribute to html entities, so `attr="{foo && bar}"` becomes `attr="foo &amp;&amp; bar"`. To prevent this from happening, instead of using the `=` operator use `!=` which won't encode your attribute value:
 
 ```pug
-button(disabled!="{foo && bar}")
+button(disabled!="{ foo && bar }")
 ```
 
 This is also necessary to pass callbacks:
 
 ```pug
-button(on:click!="{(e) => doTheThing(e)}")
+button(on:click!="{ (e) => doTheThing(e) }")
 ```
 
 It is not possible to use template literals for attribute values. You can't write `` attr=`Hello ${value ? 'Foo' : 'Bar'}` ``, instead write `attr="Hello {value ? 'Foo' : 'Bar'}"`.
@@ -146,7 +149,11 @@ To spread props into a pug element, wrap the `{...object}` expression with quote
 This:
 
 ```pug
-button.big(type="button" disabled "{...slide.props}") Send
+button.big(
+	disabled,
+	type="button",
+	{...slide.props}
+) Send
 ```
 
 Becomes:
@@ -162,8 +169,8 @@ Becomes:
 Syntax to use Svelte Element directives with Pug
 
 ```pug
-input(bind:value="{foo}")
-input(on:input="{bar}")
+input(bind:value="{ foo }")
+input(on:input="{ bar }")
 ```
 
 &nbsp;
