@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-.prettierrc
 /build
 /.svelte-kit
 /package

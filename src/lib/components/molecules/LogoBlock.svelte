@@ -8,36 +8,38 @@ A figure with svg image and caption.
 -->
 <script lang="ts">
 	// components
-	import PlusBlock from '$atoms/PlusBlock.svelte';
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	import PlusBlock from "$atoms/PlusBlock.svelte";
 
 	// props
-	export let name = '';
-	export let href = '';
+	export let name = "";
+	export let href = "";
 	export let hidePlus = false;
-	export let src = '';
+	export let src = "";
 
 	// reactive declarations
 	$: title = `Learn more about ${name}`;
+	$: showPlus = !hidePlus;
 </script>
 
 <template lang="pug">
-a.rounded-lg.transition-all(
-	class="group hover:bg-white/5"
-	"{href}"
-	"{title}")
-
-	figure.text-center.text-sm.relative
-		img.block.h-auto(
-			alt!="{name + ' logo'}"
-			height="160"
-			src!="{src}"
-			width="160"
+	a.group.rounded-lg.transition-all(
+		class="hover:bg-white/5",
+		{href},
+		{title}
+	)
+		figure.relative.text-center.text-sm
+			img.block.h-auto(
+				alt!="{ name + ' logo' }",
+				height="160",
+				src!="{ src }",
+				width="160"
 			)
-		figcaption.pointer-events-none.absolute.top-0.left-0.w-full.opacity-0.transition-opacity.text-center.font-light.tracking-wider(
-			class="group-hover:sm:opacity-100 -translate-y-7")
-			| {name}
+			figcaption.pointer-events-none.absolute.top-0.left-0.w-full.-translate-y-7.text-center.font-light.tracking-wider.opacity-0.transition-opacity(
+				class="group-hover:sm:opacity-100"
+			)
+				| {  name  }
 
-+if('!hidePlus')
-	PlusBlock
-
+	+if('showPlus')
+		PlusBlock
 </template>

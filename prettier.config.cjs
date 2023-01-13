@@ -1,7 +1,7 @@
-const prettierPluginSvelte = require('prettier-plugin-svelte');
-const prettierPluginPug = require('@prettier/plugin-pug');
-const prettierPluginTailwindcss = require('prettier-plugin-tailwindcss');
-const prettierPluginOrganizeImports = require('prettier-plugin-organize-imports');
+const prettierPluginSvelte = require("prettier-plugin-svelte");
+const prettierPluginPug = require("@prettier/plugin-pug");
+const prettierPluginTailwindcss = require("prettier-plugin-tailwindcss");
+// const prettierPluginOrganizeImports = require('prettier-plugin-organize-imports');
 
 // @ts-check
 /// <reference types="./src/prettier" />
@@ -18,16 +18,17 @@ module.exports = {
 	printWidth: 100,
 	semi: true,
 	tabWidth: 2,
-	quoteProps: 'consistent',
-	arrowParens: 'always',
-	trailingComma: 'all',
+	quoteProps: "consistent",
+	arrowParens: "always",
+	trailingComma: "all",
 	pluginSearchDirs: false,
 	pugTabWidth: 2,
-	pugUseTabs: 'true',
-	pugSortAttributes: 'asc',
-	pugWrapAttributes: 'none',
-	pugFramework: 'svelte',
-	pugEmptyAttributesThreshold: 1,
-	pugClassNotation: 'literal',
-	pugIdNotation: 'literal'
+	pugUseTabs: "true",
+	pugSortAttributes: "asc",
+	pugWrapAttributesPattern: "^(class|style|src)$",
+	pugWrapAttributesThreshold: 1,
+	pugFramework: "svelte",
+	pugEmptyAttributes: "none",
+	pugClassNotation: "literal",
+	pugIdNotation: "literal",
 };

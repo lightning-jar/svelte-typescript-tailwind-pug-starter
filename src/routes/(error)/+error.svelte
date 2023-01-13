@@ -1,1 +1,3 @@
-//TODO Build error page.
+<template lang="pug">
+	div 404 Error
+</template>
