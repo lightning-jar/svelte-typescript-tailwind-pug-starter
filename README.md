@@ -80,16 +80,7 @@ You can preview the production build with `npm run preview`.
 
 ## About SvelteKit
 
-Sveltekit is still in the final stages of beta. Specifically, it is in release candidate phase for 1.0 while the SvelteKit team addresses reported issues and add polish.
-
-While there are no more planned breaking changes before 1.0, it is still likely that there are bugs, and things will break and change.
-
-Because of this fact, there are two dev dependencies in this package which are set to pull in the latest releases (see below).
-
-- "@sveltejs/adapter-auto": "next",
-- "@sveltejs/kit": "next",
-
-As soon as SvelteKit officially releases 1.0 this starter will switch to pulling in only official releases, and the starter will become more reliably stable. For now, I will watch SvelteKit releases notes, and test daily.
+Sveltekit is a new framework for building web applications. It's built on top of Svelte, which is a component framework for building user interfaces. Sveltekit is a great tool for building modern web applications.
 
 If you get stuck working with SvelteKit yuo can reach out for help in the [SvelteKit Discord chatroom](https://svelte.dev/chat).
 

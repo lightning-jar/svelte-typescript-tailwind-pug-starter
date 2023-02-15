@@ -12,3 +12,10 @@ pnpm-lock.yaml
 package-lock.json
 yarn.lock
 bun.lockb
+
+# build
+.vercel
+.netlify
+
+# assets folder
+static
