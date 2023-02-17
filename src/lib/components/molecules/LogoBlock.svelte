@@ -26,18 +26,15 @@ A figure with svg image and caption.
 	a.group.rounded-lg.transition-all(
 		class="hover:bg-white/5",
 		{href},
-		{title}
-	)
+		{title})
 		figure.relative.text-center.text-sm
 			img.block.h-auto(
 				alt!="{ name + ' logo' }",
 				height="160",
 				src!="{ src }",
-				width="160"
-			)
+				width="160")
 			figcaption.pointer-events-none.absolute.top-0.left-0.w-full.-translate-y-7.text-center.font-light.tracking-wider.opacity-0.transition-opacity(
-				class="group-hover:sm:opacity-100"
-			)
+				class="group-hover:sm:opacity-100")
 				| {  name  }
 
 	+if('showPlus')
