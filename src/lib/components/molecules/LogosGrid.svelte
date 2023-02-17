@@ -16,8 +16,7 @@ Displays a grid of logos.
 
 <template lang="pug">
 	.mx-auto.mt-6.mb-8.grid.grid-cols-2.gap-8(
-		class="max-w-[12rem] sm:m-0 sm:mb-12 sm:max-w-none sm:grid-cols-7 sm:gap-0 md:mb-8"
-	)
+		class="max-w-[12rem] sm:m-0 sm:mb-12 sm:max-w-none sm:grid-cols-7 sm:gap-0 md:mb-8")
 		+each('$brands as brand, index')
 			+const('name = brand.name')
 			+const('href = brand.href')
@@ -27,6 +26,5 @@ Displays a grid of logos.
 				{hidePlus},
 				{href},
 				{name},
-				{src}
-			)
+				{src})
 </template>
