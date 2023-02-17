@@ -1,7 +1,5 @@
 const prettierPluginSvelte = require("prettier-plugin-svelte");
 const prettierPluginPug = require("@prettier/plugin-pug");
-const prettierPluginTailwindcss = require("prettier-plugin-tailwindcss");
-// const prettierPluginOrganizeImports = require('prettier-plugin-organize-imports');
 
 // @ts-check
 /// <reference types="./src/prettier" />
@@ -11,7 +9,7 @@ const prettierPluginTailwindcss = require("prettier-plugin-tailwindcss");
  * @type {import('prettier').Options}
  */
 module.exports = {
-	plugins: [prettierPluginSvelte, prettierPluginPug, prettierPluginTailwindcss],
+	plugins: [prettierPluginPug, prettierPluginSvelte],
 	arrowParens: "always",
 	bracketSpacing: true,
 	htmlWhitespaceSensitivity: "strict",
@@ -23,7 +21,6 @@ module.exports = {
 	tabWidth: 2,
 	trailingComma: "all",
 	useTabs: true,
-
 	pluginSearchDirs: false,
 
 	// prettier pug plugin options
@@ -40,7 +37,7 @@ module.exports = {
 	pugIdNotation: "as-is",
 	pugSingleFileComponentIndentation: true,
 	pugSortAttributes: "asc",
-	pugSortAttributesEnd: ["(style)"],
+	pugSortAttributesBeginning: ["(class)"],
 	pugTabWidth: 2,
 	pugUseTabs: "true",
 	pugWrapAttributesPattern: "(style)",
@@ -48,9 +45,7 @@ module.exports = {
 
 	// prettier svelte plugin options
 	// https://github.com/sveltejs/prettier-plugin-svelte
-	svelteSortOrder: "none",
-	svelteStrictMode: true,
-	svelteIndentScriptAndStyle: true,
 	svelteAllowShorthand: true,
-	svelteBracketNewLine: true,
+	svelteIndentScriptAndStyle: true,
+	svelteStrictMode: true,
 };
