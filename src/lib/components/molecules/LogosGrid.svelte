@@ -3,9 +3,7 @@
 Displays a grid of logos.
 -->
 <script lang="ts">
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import LogoBlock from "$molecules/LogoBlock.svelte";
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import { brands } from "$stores/brandsStore";
 
 	// declarations for variables used in template
@@ -23,8 +21,8 @@ Displays a grid of logos.
 			+const('hidePlus = $brands.length == index + 1')
 			+const('src = "/images/" + name.toLowerCase() + ".svg" ')
 			LogoBlock(
-				{hidePlus},
-				{href},
-				{name},
-				{src})
+				hidePlus!="{ hidePlus }",
+				href!="{ href }",
+				name!="{ name }",
+				src!="{ src }")
 </template>

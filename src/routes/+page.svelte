@@ -1,13 +1,9 @@
 <!-- Example Svelte Page / Starter Web Page-->
 <script lang="ts">
 	// components
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import ButtonLink from "$atoms/ButtonLink.svelte";
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import Footer from "$atoms/Footer.svelte";
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import LogosGrid from "$molecules/LogosGrid.svelte";
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import PreFooter from "$atoms/PreFooter.svelte";
 
 	// store

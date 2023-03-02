@@ -8,7 +8,6 @@ A figure with svg image and caption.
 -->
 <script lang="ts">
 	// components
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	import PlusBlock from "$atoms/PlusBlock.svelte";
 
 	// props
