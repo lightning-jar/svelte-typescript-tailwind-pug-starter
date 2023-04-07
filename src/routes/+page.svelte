@@ -24,7 +24,8 @@
 		title Svelte Pug Tailwind Typescript | SkinnyPug
 		meta(
 			content="A node starter template for the Svelte Preprocessed stack.",
-			name="description")
+			name="description"
+		)
 
 	//- body
 	main.relative.grid.min-h-screen.place-content-center.bg-primary.p-4.pb-48.text-white
@@ -43,19 +44,22 @@
 				//- cta
 				ButtonLink(
 					targetUrl="https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter",
-					title="View project on Github")
+					title="View project on Github"
+				)
 					| Clone from Github
 
 	//- pre-footer
 	PreFooter(
 		targetUrl="https://pugify.dev",
-		title="convert HTML to pug")
+		title="convert HTML to pug"
+	)
 		svelte:fragment(slot="default") Also check out the ad-free HTML to Pug converter @ https://pugify.dev
 
 	//- footer
 	Footer(
 		authorLink="https://fosstodon.org/@kevinpeckham",
-		orgLink="https://lightningjar.com")
+		orgLink="https://lightningjar.com"
+	)
 		svelte:fragment(slot="author") Kevin Peckham
 		svelte:fragment(slot="org") Lightning Jar
 </template>

@@ -13,10 +13,8 @@ const config = {
 		alias: {
 			$atoms: path.resolve("./src/lib/components/atoms"),
 			$components: path.resolve("./src/lib/components"),
-			$functions: path.resolve("./src/lib/functions"),
 			$molecules: path.resolve("./src/lib/components/molecules"),
 			$organisms: path.resolve("./src/lib/components/organisms"),
-			$settings: path.resolve("./src/lib/settings"),
 			$stores: path.resolve("./src/lib/stores"),
 			$types: path.resolve("./src/lib/types"),
 			$utils: path.resolve("./src/lib/utils"),
