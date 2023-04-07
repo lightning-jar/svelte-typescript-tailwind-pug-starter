@@ -22,8 +22,9 @@ module.exports = {
 		node: true,
 	},
 	rules: {
-		"no-unused-vars": "warn",
-		"no-undef": "warn",
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-inferrable-types": "warn",
 		"@typescript-eslint/no-unused-vars": ["off"],
+		"no-undef": "warn",
 	},
 };
