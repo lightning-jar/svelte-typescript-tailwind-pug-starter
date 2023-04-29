@@ -40,3 +40,7 @@ pnpm-lock.yaml
 
 # hosting providers
 .vercel
+
+# vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

@@ -1,7 +1,6 @@
 //import adapter from '@sveltejs/adapter-auto';
 import vercel from "@sveltejs/adapter-vercel";
 import preprocess from "svelte-preprocess";
-import path from "path";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,13 +10,13 @@ const config = {
 	kit: {
 		adapter: vercel(),
 		alias: {
-			$atoms: path.resolve("./src/lib/components/atoms"),
-			$components: path.resolve("./src/lib/components"),
-			$molecules: path.resolve("./src/lib/components/molecules"),
-			$organisms: path.resolve("./src/lib/components/organisms"),
-			$stores: path.resolve("./src/lib/stores"),
-			$types: path.resolve("./src/lib/types"),
-			$utils: path.resolve("./src/lib/utils"),
+			$atoms: "./src/lib/components/atoms",
+			$components: "./src/lib/components",
+			$molecules: "./src/lib/components/molecules",
+			$organisms: "./src/lib/components/organisms",
+			$stores: "./src/lib/stores",
+			$types: "./src/lib/types",
+			$utils: "./src/lib/utils",
 		},
 	},
 };
