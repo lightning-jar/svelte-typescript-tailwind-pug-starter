@@ -1,6 +1,5 @@
 const prettierPluginSvelte = require("prettier-plugin-svelte");
 const prettierPluginPug = require("@prettier/plugin-pug");
-// const prettierPluginOrganizeImports = require('prettier-plugin-organize-imports');
 
 // @ts-check
 /// <reference types="./src/prettier" />
@@ -11,6 +10,7 @@ const prettierPluginPug = require("@prettier/plugin-pug");
  */
 module.exports = {
 	plugins: [prettierPluginPug, prettierPluginSvelte],
+	overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
 
 	arrowParens: "always",
 	bracketSpacing: true,
