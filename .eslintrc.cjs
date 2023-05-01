@@ -28,6 +28,7 @@ module.exports = {
 		},
 	],
 	rules: {
+		"no-inner-declarations": "off",
 		"no-unused-vars": "off",
 		"@typescript-eslint/no-inferrable-types": "warn",
 		"@typescript-eslint/no-unused-vars": ["off"],
