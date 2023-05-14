@@ -1,5 +1,4 @@
-//import adapter from '@sveltejs/adapter-auto';
-import vercel from "@sveltejs/adapter-vercel";
+import adapter from "@sveltejs/adapter-auto";
 import preprocess from "svelte-preprocess";
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,7 +7,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [preprocess()],
 	kit: {
-		adapter: vercel(),
+		adapter: adapter(),
 		alias: {
 			$atoms: "./src/lib/components/atoms",
 			$components: "./src/lib/components",
