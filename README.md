@@ -13,6 +13,7 @@ A starter template to help you quickly launch a new project with Svelte / Svelte
 6. [Folder Shortcuts](#6-folder-shortcuts)
 7. [Editor & Extensions](#7-editor--extensions)
 8. [Deploying](#8-deploying)
+9. [Engine & Package Manager](#9-engine--package-manager)
 
 ## 1. About This Template
 This starter was developed for the [Lightning Jar](https://lightningjar.com) team. It's designed to get one up and running quickly on a new project using the core technologies Svelte, Sveltekit, Typescript, TailwindCSS, Pug + a few other bells and whistles ( see the full breakdown below).
