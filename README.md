@@ -12,18 +12,17 @@ A starter template to help you quickly launch a new project with Svelte / Svelte
 5. [Using Pug with Svelte](#5-using-pug-with-svelte)
 6. [Folder Shortcuts](#6-folder-shortcuts)
 7. [Editor & Extensions](#7-editor--extensions)
+8. [Deploying](#8-deploying)
 
 ## 1. About This Template
-
 This starter was developed for the [Lightning Jar](https://lightningjar.com) team. It's designed to get one up and running quickly on a new project using the core technologies Svelte, Sveltekit, Typescript, TailwindCSS, Pug + a few other bells and whistles ( see the full breakdown below).
 
 ## 2. Dependencies
 
 ### A. Frameworks & Build
-
-- **[Svelte](https://svelte.dev/)** - _component framework_
-- **[Sveltekit](https://kit.svelte.dev/)** - _application framework_
-- **[Vite](https://vitejs.dev/)** - _front-end build tool_
+* **[Svelte](https://svelte.dev/)** - _component framework_
+* **[Sveltekit](https://kit.svelte.dev/)** - _application framework_
+* **[Vite](https://vitejs.dev/)** - _front-end build tool_
 
 <!-- * #### Adapters & Plugins
 * * [sveltejs/adapter-auto](https://github.com/sveltejs/kit/tree/master/packages/adapter-auto)
@@ -31,46 +30,39 @@ This starter was developed for the [Lightning Jar](https://lightningjar.com) tea
 * * [svelte-preprocess](https://github.com/sveltejs/eslint-plugin-svelte3) -->
 
 ### B. Scripting / Typescript
-
-- **[Typescript](https://www.typescriptlang.org/)** - _JS preprocessor_
-- **[tslib](https://github.com/Microsoft/tslib)** - _TS runtime library_
+* **[Typescript](https://www.typescriptlang.org/)** - _JS preprocessor_
+* **[tslib](https://github.com/Microsoft/tslib)** - _TS runtime library_
 
 ### C. Templating / Pug
-
-- **[Pug](https://pugjs.org/api/getting-started.html)** - _HTML template engine_
+* **[Pug](https://pugjs.org/api/getting-started.html)** - _HTML template engine_
 
 ### D. CSS / TailwindCSS
+* **[Autoprefixer](https://github.com/postcss/autoprefixer)** - _CSS vendor prefixing_
+* **[PostCSS](https://postcss.org/)** - _CSS transformations_
+* **[TailwindCSS](https://tailwindcss.com/)** - _CSS framework_
 
-- **[Autoprefixer](https://github.com/postcss/autoprefixer)** - _CSS vendor prefixing_
-- **[PostCSS](https://postcss.org/)** - _CSS transformations_
-- **[TailwindCSS](https://tailwindcss.com/)** - _CSS framework_
-
-- #### Tailwind Plugins (optional)
-- [tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography) - _prose styling_
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms) - _form styling_
+* #### Tailwind Plugins (optional)
+* [tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography) - _prose styling_
+* [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms) - _form styling_
 
 ### E. Formatting / Prettier
+* **[Prettier](https://prettier.io/)** - _formatter_
 
-- **[Prettier](https://prettier.io/)** - _formatter_
-
-- #### Prettier Plugins
-- [@prettier/plugin-pug](https://github.com/prettier/plugin-pug) - _Pug formatting_<br />
-- [prettier-plugin-svelte](https://github.com/sveltejs/prettier-plugin-svelte) - _Svelte formatting_<br />
+* #### Prettier Plugins
+* [@prettier/plugin-pug](https://github.com/prettier/plugin-pug) - _Pug formatting_<br />
+* [prettier-plugin-svelte](https://github.com/sveltejs/prettier-plugin-svelte) - _Svelte formatting_<br />
 
 ### F. Linting / ESLint
+* **[ESLint](https://eslint.org/)** - _linter_
 
-- **[ESLint](https://eslint.org/)** - _linter_
-
-- #### ESLint Parsers & Plugins
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - _compatibility w/ prettier_
-- [typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser) - _TS parsing_
-- [typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/)- _TS linting_
-- [eslint-plugin-svelte3](https://github.com/sveltejs/eslint-plugin-svelte3) - _Svelte linting_
+* #### ESLint Parsers & Plugins
+* [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - _compatibility w/ prettier_
+* [typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser) - _TS parsing_
+* [typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/) - _TS_
 
 ### G. Testing
-
-- **[Playwright](https://playwright.dev/)** - _cross-browser testing_
-- **[Vitest](https://vitest.dev/)** - _unit testing_
+* **[Playwright](https://playwright.dev/)** - _cross-browser testing_
+* **[Vitest](https://vitest.dev/)** - _unit testing_
 
 ## 3. Getting Started
 
@@ -195,13 +187,15 @@ input(on:input="{ bar }")
 ## 6. Folder Shortcuts
 
 The following shortcuts and corresponding folders come pre-configured in this template:
-
 - $atoms: './src/lib/components/atoms'
+- $assets: "./src/lib/assets",
 - $components: './src/lib/components'
+- $data: '.src/lib/data'
 - $lib: './src/lib'
 - $molecules: './src/lib/components/molecules'
 - $organisms: './src/lib/components/organisms'
 - $stores: './src/lib/stores'
+- $tools: './src/lib/tools'
 - $types: './src/lib/types'
 - $utils: './src/lib/utils'
 
@@ -210,9 +204,17 @@ The following shortcuts and corresponding folders come pre-configured in this te
 ## 7. Editor & Extensions
 
 If you are using VSCode, we recommend these extensions:
-
 - [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
 - [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
+
+## 8. Deploying
+
+This starter is optimized for quick deployment of your projects to Vercel using the [Vercel for GitHub](https://vercel.com/github) integration. You can learn more in the [Vercel documentation](https://vercel.com/docs).
+
+This starter uses the [Vite adapter for Vercel](https://kit.svelte.dev/docs/adapter-vercel).
+
+## 9. Engine & Package Manager
+This starter is optimized for use with Node 18x and PNPM 8x. You can learn more about PNPM [here](https://pnpm.io/).
