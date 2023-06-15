@@ -13,31 +13,41 @@ A figure with svg image and caption.
 	// props
 	export let name = "";
 	export let href = "";
-	export let hidePlus = false;
+	export let showPlus = true;
+	export let index = 0;
 	export let src = "";
 
 	// reactive declarations
+	let title: string;
 	$: title = `Learn more about ${name}`;
-	$: showPlus = !hidePlus;
 </script>
 
 <template lang="pug">
-	a.group.rounded-lg.transition-all(
-		class="hover:bg-white/5",
-		{href},
-		{title}
+	a.group.rounded-lg(
+		aria-labelledby!="logo-{ index }-caption",
+		href!="{ href }",
+		title!="{ title }"
 	)
-		figure.relative.text-center.text-sm
-			img.block.h-auto(
-				alt!="{ name + ' logo' }",
-				height="160",
-				src!="{ src }",
-				width="160"
-			)
-			figcaption.pointer-events-none.absolute.top-0.left-0.w-full.-translate-y-7.text-center.font-light.tracking-wider.opacity-0.transition-opacity(
-				class="group-hover:sm:opacity-100"
-			)
-				| { name }
+		figure.grid.grid-cols-1.place-items-center
+			//- caption
+			figcaption.tracking-wider.transition-opacity.text-15.mb-1(
+				class="opacity-100",
+				id!="logo-{ index }-caption"
+			) { name }
+
+			//- image
+			.relative.flex
+				//- shaded background
+				.absolute.inset-0.bg-neutral-50.opacity-0.transition-opacity.rounded-md(
+					class="group-hover:opacity-5 -z-10",
+					id!="logo-{ index }-background"
+				)
+				img(
+					alt!="{ name + ' logo' }",
+					height="160",
+					src!="{ src }",
+					width="160"
+				)
 
 	+if('showPlus')
 		PlusBlock
