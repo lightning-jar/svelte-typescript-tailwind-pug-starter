@@ -33,10 +33,10 @@
 				h1.text-22.mb-3.font-semibold.text-accent
 					| Hit the ground running with
 					br
-					| Sveltekit, Typescript, TailwindCSS &amp; Pug.
+					| Sveltekit, Typescript, Tailwind &amp; Pug.
 
 				//- text
-				p.text-md.mb-10.text-neutral-100(class="sm:mb-8 leading-relaxed")
+				p.text-md.mb-10.text-neutral-100.text-18(class="sm:mb-8 leading-relaxed")
 					| This project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. Designed to help get you up and running quickly with the SkinnyPug Stack.
 
 				//- cta
