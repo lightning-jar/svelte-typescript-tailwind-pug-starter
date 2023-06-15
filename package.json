@@ -1,7 +1,7 @@
 {
 	"author": "Kevin Peckham",
 	"name": "lj-sveltekit-ts-tailwind-pug-starter",
-	"version": "1.0.4",
+	"version": "1.0.8",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/lightning-jar/svelte-typescript-tailwind-pug-starter"
