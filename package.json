@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.37.1",
-		"@prettier/plugin-pug": "^2.5.2",
+		"@prettier/plugin-pug": "^3.0.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@sveltejs/kit": "^1.22.6",
@@ -19,8 +19,8 @@
 		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-svelte": "^2.32.4",
 		"postcss": "^8.4.28",
-		"prettier": "^2.8.8",
-		"prettier-plugin-svelte": "^2.10.1",
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
 		"pug": "^3.0.2",
 		"svelte": "^4.2.0",
 		"svelte-check": "^3.5.0",
@@ -51,7 +51,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier . --write ."
 	},
 	"engines": {
 		"node": "18.x",
