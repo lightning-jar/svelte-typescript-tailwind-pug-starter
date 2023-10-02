@@ -211,9 +211,9 @@ If you are using VSCode, we recommend these extensions:
 - [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
 
-* note: this template includes a `.vscode` folder with some pre-configured settings for VSCode.
+* note: This template includes a `.vscode` folder with some pre-configured settings for VSCode. Set `"editor.formatOnSave": true` to activate formatting on save.
 
-* note: if you are using the ESLint extension, you will need to set `
+* note: Tf you are using the ESLint extension, you will need to set `
 "eslint.experimental.useFlatConfig": true` in your VSCode settings, so the extension can read the 'eslint.config.js' file used in this project.
 
 
