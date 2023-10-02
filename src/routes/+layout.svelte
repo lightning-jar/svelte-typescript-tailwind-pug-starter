@@ -3,5 +3,4 @@
 </script>
 
 <template lang="pug">
-	slot
-</template>
+	slot</template>

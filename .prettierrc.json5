@@ -1,21 +1,17 @@
-const prettierPluginSvelte = require("prettier-plugin-svelte");
-const prettierPluginPug = require("@prettier/plugin-pug");
-
-// @ts-check
-/// <reference types="./src/prettier" />
-/// <reference types="@prettier/plugin-pug/src/prettier" />
-
-/**
- * @type {import('prettier').Options}
- */
-module.exports = {
-	plugins: [prettierPluginPug, prettierPluginSvelte],
-	overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
-
+{
+	plugins: ["@prettier/plugin-pug", "prettier-plugin-svelte"],
+	overrides: [
+		{
+			files: "*.svelte",
+			options: {
+				parser: "svelte",
+			},
+		},
+	],
 	arrowParens: "always",
 	bracketSpacing: true,
+	embeddedLanguageFormatting: "auto",
 	htmlWhitespaceSensitivity: "strict",
-	pluginSearchDirs: false,
 	printWidth: 80,
 	quoteProps: "consistent",
 	semi: true,
@@ -29,12 +25,16 @@ module.exports = {
 	// https://prettier.github.io/plugin-pug/guide/pug-specific-options.html
 	// https://prettier.github.io/plugin-pug/guide/standard-prettier-overrides.html
 	pugArrowParens: "always",
+	pugAttributeSeparator: "always",
+	pugBracketSameLine: false,
 	pugClassLocation: "before-attributes",
 	pugClassNotation: "as-is",
+	pugCommentPreserveSpaces: "keep-all",
 	pugEmptyAttributes: "as-is",
 	pugExplicitDiv: false,
 	pugFramework: "svelte",
 	pugIdNotation: "as-is",
+	pugPrintWidth: 80,
 	pugSingleFileComponentIndentation: false,
 	pugSortAttributes: "asc",
 	pugSortAttributesBeginning: ["(class)"],
@@ -44,6 +44,6 @@ module.exports = {
 
 	// prettier svelte plugin options
 	// https://github.com/sveltejs/prettier-plugin-svelte
-	svelteAllowShorthand: true,
 	svelteStrictMode: true,
-};
+	svelteAllowShorthand: true,
+}

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
 	content: ["./src/**/*.{html,pug,js,svelte,ts}"],
 	theme: {
 		extend: {
