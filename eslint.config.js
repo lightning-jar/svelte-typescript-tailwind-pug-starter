@@ -13,7 +13,7 @@ const tsRecommendedRules = {
 };
 
 // from eslint-config-prettier, rules to override ESLint formatting rules that might conflict with Prettier
-import eslintConfigPrettier from "eslint-config-prettier"
+import eslintConfigPrettier from "eslint-config-prettier";
 
 // from svelte, parser for svelte
 import svelteEslintParser from "svelte-eslint-parser";
