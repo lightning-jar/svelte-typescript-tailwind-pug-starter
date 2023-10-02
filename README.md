@@ -211,6 +211,12 @@ If you are using VSCode, we recommend these extensions:
 - [Tailwind CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
 
+* note: this template includes a `.vscode` folder with some pre-configured settings for VSCode.
+
+* note: if you are using the ESLint extension, you will need to set `
+"eslint.experimental.useFlatConfig": true` in your VSCode settings, so the extension can read the 'eslint.config.js' file used in this project.
+
+
 ## 8. Deploying
 
 This starter is optimized for quick deployment of your projects to Vercel using the [Vercel for GitHub](https://vercel.com/github) integration. You can learn more in the [Vercel documentation](https://vercel.com/docs).
