@@ -1,7 +1,7 @@
 {
 	"author": "Kevin Peckham",
 	"name": "lj-sveltekit-ts-tailwind-pug-starter",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/lightning-jar/svelte-typescript-tailwind-pug-starter"
@@ -19,7 +19,6 @@
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte": "^2.33.2",
 		"globals": "^13.22.0",
-		"json5": "^2.2.3",
 		"postcss": "^8.4.31",
 		"prettier": "^3.0.3",
 		"prettier-plugin-svelte": "^3.0.3",
@@ -33,6 +32,7 @@
 		"vite": "^4.4.9",
 		"vitest": "^0.34.6"
 	},
+	"type": "module",
 	"description": "A Svelte, Typescript, Tailwindcss, & Pug starter template",
 	"homepage": "https://skinnypug.dev",
 	"keywords": [
@@ -58,6 +58,5 @@
 	"engines": {
 		"node": "18.x",
 		"pnpm": "8.x"
-	},
-	"type": "module"
+	}
 }
