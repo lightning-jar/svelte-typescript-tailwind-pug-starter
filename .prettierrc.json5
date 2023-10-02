@@ -17,8 +17,10 @@
 	// https://prettier.github.io/plugin-pug/guide/pug-specific-options.html
 	// https://prettier.github.io/plugin-pug/guide/standard-prettier-overrides.html
 	pugArrowParens: "always",
+	pugAttributeSeparator: "always",
 	pugClassLocation: "before-attributes",
 	pugClassNotation: "as-is",
+	pugCommentPreserveSpaces: "keep-all",
 	pugEmptyAttributes: "as-is",
 	pugExplicitDiv: false,
 	pugFramework: "svelte",
