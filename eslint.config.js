@@ -36,11 +36,10 @@ export default [
 	{
 		languageOptions: {
 			parser: tsParser,
+			sourceType: "module",
+			ecmaVersion: 2022,
 			parserOptions: {
-				sourceType: "module",
-				ecmaVersion: 2022,
 				extraFileExtensions: [".svelte"],
-				// extraFileExtensions: [".svelte"],
 			},
 			// enable globals
 			globals: {
@@ -64,10 +63,10 @@ export default [
 	{
 		files: ["*.svelte"],
 		languageOptions: {
+			sourceType: "module",
+			ecmaVersion: 2022,
 			parser: svelteEslintParser,
 			parserOptions: {
-				sourceType: "module",
-				ecmaVersion: 2022,
 				parser: "@typescript-eslint/parser",
 			},
 		},
