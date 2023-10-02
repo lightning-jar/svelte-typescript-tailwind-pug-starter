@@ -1,15 +1,9 @@
-// @ts-check
-/// <reference types="prettier" />
-/// <reference types="prettier-plugin-svelte" />
-/// <reference types="@prettier/plugin-pug/src/prettier" />
-
-const config = {
+{
 	plugins: ["@prettier/plugin-pug", "prettier-plugin-svelte"],
 	overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
 	arrowParens: "always",
 	bracketSpacing: true,
 	htmlWhitespaceSensitivity: "strict",
-	// pluginSearchDirs: false,
 	printWidth: 80,
 	quoteProps: "consistent",
 	semi: true,
@@ -40,6 +34,4 @@ const config = {
 	// https://github.com/sveltejs/prettier-plugin-svelte
 	svelteStrictMode: true,
 	svelteAllowShorthand: true,
-};
-
-export default config;
+}
