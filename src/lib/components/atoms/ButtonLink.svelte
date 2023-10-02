@@ -17,4 +17,5 @@ An <a> styled to look like a button.
 			href!="{ targetUrl }",
 			title!="{ title }"
 		)
-			slot</template>
+			slot
+</template>

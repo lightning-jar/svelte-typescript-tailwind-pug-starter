@@ -1,8 +1,16 @@
 {
 	plugins: ["@prettier/plugin-pug", "prettier-plugin-svelte"],
-	overrides: [{ files: "*.svelte", options: { parser: "svelte" } }],
+	overrides: [
+		{
+			files: "*.svelte",
+			options: {
+				parser: "svelte",
+			},
+		},
+	],
 	arrowParens: "always",
 	bracketSpacing: true,
+	embeddedLanguageFormatting: "auto",
 	htmlWhitespaceSensitivity: "strict",
 	printWidth: 80,
 	quoteProps: "consistent",
@@ -18,6 +26,7 @@
 	// https://prettier.github.io/plugin-pug/guide/standard-prettier-overrides.html
 	pugArrowParens: "always",
 	pugAttributeSeparator: "always",
+	pugBracketSameLine: false,
 	pugClassLocation: "before-attributes",
 	pugClassNotation: "as-is",
 	pugCommentPreserveSpaces: "keep-all",
@@ -25,6 +34,7 @@
 	pugExplicitDiv: false,
 	pugFramework: "svelte",
 	pugIdNotation: "as-is",
+	pugPrintWidth: 80,
 	pugSingleFileComponentIndentation: false,
 	pugSortAttributes: "asc",
 	pugSortAttributesBeginning: ["(class)"],
