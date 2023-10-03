@@ -1,46 +1,38 @@
 // from eslint, basic recommended rules
 import js from "@eslint/js";
-const eslintRecommendedRules = js.configs.recommended;
+const eslintRecommendedRules = js.configs.recommended.rules;
 
 // from typescript-eslint, parser and plugin for typescript
 import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
-// recommended rules from typescript-eslint
-// we have to do a bit of string manipulation to replace the plugin name
-// so that it can be used with the ESLint "flat config" format
-const tsRecommendedRules = {
-	rules: tsPlugin.configs.recommended.rules,
-};
+const tsRecommendedRules = tsPlugin.configs.recommended.rules;
 
 // from eslint-config-prettier, rules to override ESLint formatting rules that might conflict with Prettier
 import eslintConfigPrettier from "eslint-config-prettier";
+const prettierRecommendedRules = eslintConfigPrettier.rules;
 
 // from svelte, parser for svelte
+import svelteEslintPlugin from "eslint-plugin-svelte";
 import svelteEslintParser from "svelte-eslint-parser";
+const svelteRecommendedRules = svelteEslintPlugin.configs.recommended.rules;
+const sveltePrettierRules = svelteEslintPlugin.configs.prettier.rules;
 
 // globals package for predefined global variables
 // https://github.com/sindresorhus/globals
 import globals from "globals";
 
 export default [
-	// 1. globally ignore files in .svelte-kit directory
-	{
-		ignores: [".svelte-kit/**/*.js"],
-	},
-	// 2. add recommended rules from ESLint
-	// reference: https://eslint.org/docs/rules/
-	eslintRecommendedRules,
-	// 3. add recommended rules from typescript-eslint
-	tsRecommendedRules,
 	// 4. set default parser to typescript-eslint-parser
 	{
+		files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts", "**/*.svelte"],
 		languageOptions: {
 			parser: tsParser,
-			sourceType: "module",
-			ecmaVersion: 2022,
 			parserOptions: {
 				extraFileExtensions: [".svelte"],
+				ecmaVersion: 2022,
 			},
+			sourceType: "module",
+			ecmaVersion: 2022,
 			// enable globals
 			globals: {
 				...globals.browser,
@@ -52,25 +44,50 @@ export default [
 			"@typescript-eslint": tsPlugin,
 		},
 		rules: {
-			// custom rules added
+			// add recommended rules from ESLint
+			...eslintRecommendedRules,
+			// add recommended rules from typescript-eslint
+			...tsRecommendedRules,
+			...prettierRecommendedRules,
+			// add custom rules
 			"@typescript-eslint/no-unused-vars": "off",
-			"@typescript-eslint/no-inferrable-types": "warn",
+			"@typescript-eslint/no-inferrable-types": "off",
 			"no-inner-declarations": "off",
 			"no-undef": "warn",
 		},
+		ignores: [
+			"**/.*",
+			"**/.svelte-kit/**",
+			"**/.vercel/**",
+			"**/build/**",
+			"**/package/**",
+			"**/yarn.lock",
+			"**/package-lock.json",
+			"**/pnpm-lock.yaml",
+			"**/src/static/**",
+		],
 	},
-	// 5. add parser for svelte
 	{
-		files: ["*.svelte"],
+		files: ["**/*.svelte"],
+		plugins: {
+			svelte: svelteEslintPlugin,
+		},
+		rules: {
+			// add recommended rules from svelte/recommended
+			...svelteRecommendedRules,
+			// add recommended rules from svelte/prettier
+			...sveltePrettierRules,
+			// add custom rules
+			// note: with pug syntax the parser doesn't seem to know when certain refs are used in the template
+			"svelte/valid-compile": "warn",
+		},
 		languageOptions: {
 			sourceType: "module",
 			ecmaVersion: 2022,
 			parser: svelteEslintParser,
 			parserOptions: {
-				parser: "@typescript-eslint/parser",
+				parser: tsParser,
 			},
 		},
 	},
-	// 6. eslint-config-prettier rules to override ESLint formatting rules that might conflict with Prettier
-	eslintConfigPrettier,
 ];
