@@ -62,7 +62,6 @@ This starter was developed for the [Lightning Jar](https://lightningjar.com) tea
 * [typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/) - _TS_
 
 ### G. Testing
-* **[Playwright](https://playwright.dev/)** - _cross-browser testing_
 * **[Vitest](https://vitest.dev/)** - _unit testing_
 
 ## 3. Getting Started
@@ -223,5 +222,8 @@ This starter is optimized for quick deployment of your projects to Vercel using 
 
 This starter uses the [Vite adapter for Vercel](https://kit.svelte.dev/docs/adapter-vercel).
 
+For more universal use, switch back to the [Auto adapter](https://kit.svelte.dev/docs#adapters-auto) by changing the adapter in the `svelte.config.js` file.
+
+
 ## 9. Engine & Package Manager
-This starter is optimized for use with Node 18x and PNPM 8x. You can learn more about PNPM [here](https://pnpm.io/).
+This starter can be used with multiple package managers.  It is tested with PNPM, but should work with NPM or Yarn as well.  The engine is not set in stone, but the starter is tested with Node 20.0.0.

@@ -1,13 +1,12 @@
 {
 	"author": "Kevin Peckham",
 	"name": "lj-sveltekit-ts-tailwind-pug-starter",
-	"version": "1.0.10",
+	"version": "1.1.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/lightning-jar/svelte-typescript-tailwind-pug-starter"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.37.1",
 		"@prettier/plugin-pug": "^3.0.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/adapter-vercel": "^3.0.3",
@@ -48,7 +47,6 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"test": "playwright test",
 		"test:unit": "vitest",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
