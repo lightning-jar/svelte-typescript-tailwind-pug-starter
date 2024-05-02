@@ -40,7 +40,7 @@
 	pugSortAttributesBeginning: ["(class)"],
 	pugTabWidth: 2,
 	pugWrapAttributesPattern: "(style)",
-	pugWrapAttributesThreshold: 1,
+	pugWrapAttributesThreshold: 2,
 
 	// prettier svelte plugin options
 	// https://github.com/sveltejs/prettier-plugin-svelte
