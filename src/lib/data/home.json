@@ -60,6 +60,7 @@
 	],
 	"meta": {
 		"description": "A node starter template for the Svelte, Typescript, TailwindCSS, and Pug stack.",
-		"title": "Svelte + Pug | Starter Template"
+		"title": "Svelte + Pug | Starter Template",
+		"robotsFollow": true
 	}
 }
