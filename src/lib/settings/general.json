@@ -1,0 +1,10 @@
+{
+	"author": {
+		"name": "Kevin Peckham",
+		"company": "Lightning Jar"
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter"
+	}
+}
