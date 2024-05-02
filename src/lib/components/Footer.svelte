@@ -10,7 +10,8 @@ Web footer component
 	export let org: Link | null = null;
 
 	// helper function to create a link
-	function createLink(link: Link) {
+	function link(link: Link | null) {
+		if (!link) return "";
 		return `
 		<a
 			${link?.url || link.href ? `href="${link.url ?? link.href}"` : ``}",
@@ -18,12 +19,15 @@ Web footer component
 			${link?.target ? `target="${link.target}"` : ``}",
 			${link?.title ? `title="${link.title}"` : ``}>${link?.label ?? ""}</a>`.trim();
 	}
+
+	// html strings
+	const authLink = author ? `<span>Created by&nbsp;</span>${link(author)}` : "";
+	const orgLink = org ? `<span>&nbsp;@&nbsp;</span>${link(org)}` : "";
 </script>
 
 <template lang="pug">
 	footer.flex.justify-center.pb-24
-		+html('`<span>Created by&nbsp;</span>` + createLink(author)')
-		+html('`<span>&nbsp;@&nbsp;</span>` + createLink(org)')
+		+html('authLink + orgLink')
 
 	|</template>
 

@@ -53,7 +53,7 @@ export default [
 			"@typescript-eslint/no-unused-vars": "off",
 			"@typescript-eslint/no-inferrable-types": "off",
 			"no-inner-declarations": "off",
-			"no-undef": "warn",
+			"no-undef": "off",
 		},
 		ignores: [
 			"**/.*",
