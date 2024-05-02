@@ -21,11 +21,11 @@
 		+if('$page.data?.meta?.title')
 			title { $page.data.meta.title }
 		+if('$page.data?.meta?.description')
-			meta(
-				content!="{ $page.data.meta.description }",
-				name="description"
-			)
+			meta(content!="{ $page.data.meta.description }", name="description")
 		+if('!data.dev && $page?.data?.meta?.robotsFollow')
+			meta(content="index, follow", name="robots")
+			+else
+				meta(content="noindex, nofollow", name="robots")
 	div(
 		class=`
 			bg-primary
@@ -65,10 +65,7 @@
 				title!="convert html to pug"
 			) Also check out the ad-free HTML to Pug converter @ https://pugify.dev
 
-		Footer(
-			author!="{ data.footer.author }",
-			org!="{ data.footer.org }"
-		)
+		Footer(author!="{ data.footer.author }", org!="{ data.footer.org }")
 
 	|</template>
 
