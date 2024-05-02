@@ -80,6 +80,7 @@ export default [
 			// add custom rules
 			// note: with pug syntax the parser doesn't seem to know when certain refs are used in the template
 			"svelte/valid-compile": "warn",
+			"svelte/no-at-html-tags": "warn",
 		},
 		languageOptions: {
 			sourceType: "module",

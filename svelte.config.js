@@ -16,6 +16,7 @@ const config = {
 			$data: "./src/lib/data",
 			$molecules: "./src/lib/components/molecules",
 			$organisms: "./src/lib/components/organisms",
+			$queries: "./src/lib/queries",
 			$settings: "./src/lib/settings",
 			$stores: "./src/lib/stores",
 			$tools: "./src/lib/components/tools",

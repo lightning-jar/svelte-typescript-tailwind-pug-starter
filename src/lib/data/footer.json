@@ -1,0 +1,16 @@
+{
+	"author": {
+		"label": "Kevin Peckham",
+		"url": "https://fosstodon.org/@kevinpeckham",
+		"rel": "me",
+		"target": "_self",
+		"title": "my mastodon profile"
+	},
+	"org": {
+		"label": "Lightning Jar",
+		"url": "https://www.lightningjar.com",
+		"rel": "external",
+		"target": "_self",
+		"title": "Lightning Jar website"
+	}
+}
