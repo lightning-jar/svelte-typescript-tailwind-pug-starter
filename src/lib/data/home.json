@@ -1,0 +1,65 @@
+{
+	"headline": "Hit the ground running with Sveltekit, Typescript, Tailwind, and Pug",
+	"text": "The SkinnyPug project is an open source starter template for Node projects using SvelteKit, Typescript, TailwindCSS, and Pug. <span class=\"hidden sm:inline\">Designed to help get you up and running quickly with the SkinnyPug Stack.</span>",
+	"cta": {
+		"label": "Github",
+		"url": "https://github.com/lightning-jar/lj-sveltekit-ts-tailwind-pug-starter",
+		"rel": "external",
+		"target": "_current",
+		"title": "view project on Github"
+	},
+	"brands": [
+		{
+			"id": "svelte",
+			"image": {
+				"url": "/images/svelte.svg",
+				"alt": "Svelte logo"
+			},
+			"link": {
+				"url": "https://svelte.dev/",
+				"rel": "external",
+				"label": "Svelte"
+			}
+		},
+		{
+			"id": "typescript",
+			"image": {
+				"url": "/images/typescript.svg",
+				"alt": "Typescript logo"
+			},
+			"link": {
+				"url": "https://www.typescriptlang.org/",
+				"rel": "external",
+				"label": "Typescript"
+			}
+		},
+		{
+			"id": "tailwind",
+			"image": {
+				"url": "/images/tailwindcss.svg",
+				"alt": "TailwindCSS logo"
+			},
+			"link": {
+				"url": "https://tailwindcss.com/",
+				"rel": "external",
+				"label": "TailwindCSS"
+			}
+		},
+		{
+			"id": "pug",
+			"image": {
+				"url": "/images/pug.svg",
+				"alt": "Pug logo"
+			},
+			"link": {
+				"url": "https://pugjs.org/api/getting-started.html",
+				"rel": "external",
+				"label": "Pug"
+			}
+		}
+	],
+	"meta": {
+		"description": "A node starter template for the Svelte, Typescript, TailwindCSS, and Pug stack.",
+		"title": "Svelte + Pug | Starter Template"
+	}
+}
